@@ -62,7 +62,7 @@ window.onload = function(){
 		}
 
 		if(event.code == "Space"){
-			obj.style.top = "-80px";
+			obj.style.top = "-140px";
 			var audioTwoo = new Audio(); // Создаём новый элемент Audio
  		 	audioTwoo.src = 'Audio/jump.mp3'; // Указываем путь к звуку "клика"
   			audioTwoo.autoplay = true; // Автоматически запускаем
