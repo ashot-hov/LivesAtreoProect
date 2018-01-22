@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+.all{
+	width: 80px;
+	height: inherit;
+	background: #FFD65A;
+	display: inline-block;
+	overflow: hidden;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin: 0 -3px;
+	padding: 10px 5px;
+	transition: 0.2s ease-in;
+	cursor: pointer;
+	border: solid 2px #333;
+}
+
+.all:hover{
+	transform: scale(1.11);
+}
+
+#one{background: #8E4661;} #second{background: #51628E;}
+#three{background: #5FB23B; margin: -5px -3px;} #four{background: #B23135; margin: -5px -3px;}
+
+
+.sett i{
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 75%;
+	transform: translate( 75%, -50%);	
+	font-size: 38px;
+	cursor: pointer;
+	transition: 0.3s ease-in;
+	color: white;
+	margin-left: -15px;
+}
+
+.sett i:hover{
+	margin-left: -10px;
+	transition: 0.2s ;
+}
+
+.settings{
+	background: #758E79;
+	width: 220px;
+	height: 50px;
+	position: relative;
+	border-radius: 8px;
+	top: 230%;
+	left: -8%;
+	transform: translate(-8%, 230%);
+}

@@ -1,0 +1,84 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.cont{
+	margin-top: 20%;
+	margin-left: -50px;
+}
+
+.cont ul{
+	height: 120px;
+	width: 120px;
+	background: black;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0px 0px 25px 5px;
+	transition: 0.2s ease-in;
+}
+
+.cont ul li{
+	display: inline-block;
+	background-color: #4EC786;
+	font-size: 1.5em; 
+	height: 10em; 
+	left: 50%; 
+	margin-left: -10em; 
+	overflow: hidden; 
+	position: absolute; 
+	top: -150%; 
+	transform-origin: 100% 100% 0; 
+	transition: border 0.3s ease 0s;
+	width: 10em;
+ 
+}
+
+.cont ul li a{
+	border-radius: 50%; 
+	bottom: -7.25em; 
+	color: #fff; 
+	display: block; 
+	font-size: 20px; 
+	height: 14.5em; 
+	padding-top: 4.5em; 
+	position: absolute; 
+	right: -7.25em; 
+	text-align: center; 
+	text-decoration: none; 
+	transform: skew(-50deg) rotate(-70deg) scale(1); 
+	transition: opacity 0.3s ease 0s, color 0.3s ease 0s; 
+	width: 14.5em; 
+	background-color: #4EC786;
+}
+
+.cont ul li a i{
+	font-size: 13px;
+}
+
+.cont ul li:first-child { transform: rotate(80deg) skew(50deg); }
+.cont ul li:nth-child(2) { transform: rotate(120deg) skew(50deg); }
+.cont ul li:nth-child(3) { transform: rotate(160deg) skew(50deg); }
+.cont ul li:nth-child(4) { transform: rotate(200deg) skew(50deg); }
+.cont ul li:nth-child(5) { transform: rotate(240deg) skew(50deg); }
+
+.cont ul li a:hover{
+	background-color: #2C2C2C;
+}
+
+.active{
+	transform: scale(3);
+	transition: 0.2s ease-in;
+}
+
+.cont .btn{
+	height: 120px;
+	width: 120px;
+	background: #7992C7;
+	border-radius: 50%;	
+	position: relative;
+	top: 100%;
+	transform: translate(0, -100%);
+	cursor: pointer;
+}
