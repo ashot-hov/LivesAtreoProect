@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.true{
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 70px auto;
+    -webkit-transform: (3);
+    -webkit-transition: 0.3s;
+}
+button{
+    background: rgb(165,255,190);
+    outline: none;
+    border: 1px solid rgb(165,255,190);
+    width: 50px;
+    height: 25px;
+}
+        
+#container{
+    padding: 30px;
+    position: absolute;
+    top: 10px;
+}

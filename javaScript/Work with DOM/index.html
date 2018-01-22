@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>//Практика JS. #2</title>
+        <meta charset='utf-8'>
+        <link rel='stylesheet' href='main.css'>
+    </head>
+    <style>
+      
+    </style>
+    <body>
+        <div id='block' class='true'></div><br>
+        <div id='container'>
+            
+            <h3>Width</h3><br>
+            <input type='text' id='w'><br><br>
+            
+            <h3>Height</h3><br>
+            <input type='text' id='h'><br><br>
+            
+            <h3>Background</h3><br>
+            <input type='text' id='b'><br><br>
+            
+            <h3>Shadow</h3><br>
+            <input type='text' id='sh'><br><br>
+            
+            <h3>Border Radius</h3><br>
+            <input type='range' id='r' oninput='rs(this)' min='0' max='100' step='1'><br>
+            <span id='precent'></span><br>
+            
+            <h3>Rotate</h3><br>
+            <div class='control'>
+                <input type='range' id='rt' oninput='deg(this)' value='0' min='0' max='360' step='1'><br>
+                <oputput id='uts' class="">0</output><br><br>
+            </div>
+            <button id='btn'>Button</button>
+        </div>
+    </body>
+    <script src='script.js'></script>
+</html>
