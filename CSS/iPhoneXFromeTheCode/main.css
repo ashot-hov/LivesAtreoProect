@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway')
+
+*{
+	padding: 0;
+	marign: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	background-image: linear-gradient(80deg, #D7247F, #2B408F);
+}
+
+/*===================frontalPanel Satrt=======================*/
+
+
+.frontPanel{
+	position: absolute;
+    top: 15%;
+    left: 7%;
+    transform: translate(-10%, -10%);
+    width: 254px;
+    height: 515px;
+    border: 5px solid #393939;
+    border-radius: 48px;
+    border-top: 2.99px solid #393939;
+    border-bottom: 2px solid #393939;
+    border-left: none;
+    border-right: none;
+}
+
+.frontPanel .frame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 245px;
+    height: 507px;
+    border: 4px solid #5D5D5D;
+    border-left: 3.5px solid #5D5D5D;
+    border-right: 3.5px solid #5D5D5D;
+    border-bottom: 4px solid #5D5D5D;
+    border-radius: 40px;
+    background: #2E4895;
+}
+
+.frontPanel .frameTwoo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 237px;
+    height: 499px;
+    border: 6.5px solid #101012;
+    border-radius: 39px;
+    border-top: 8px solid #101012;
+    border-bottom: 8px solid #101012;
+    background-image: url('img/oboi.jpg');
+    background-size: cover;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.frontPanel .frameTwoo .panel{
+ 	position: absolute;
+    top: 1.8%;
+    left: 50%;	
+    transform: translate(-50%, -50%);
+	width: 130px;
+	height: 19px;
+	background: #101012;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	border-bottom-right-radius: 13px;
+	border-bottom-left-radius: 13px;
+}
+
+.frontPanel .frameTwoo .panel .speaker{
+	position: absolute;
+    top: 3%;
+    left: 39%;
+    width: 34px;
+    height: 4.5px;
+    border-top: 2.4px solid #1f1d1d;
+    border-bottom: 2.4px solid #1f1d1d;
+    border-left: none;
+    border-right: none;
+    border-radius: 4px;
+}
+
+.frontPanel .frameTwoo .panel .frontCam{
+	position: absolute;
+    top: 29%;
+    left: 69%;
+    width: 6.5px;
+    height: 6.5px;
+    border: 1px solid #403d3d;
+    background: #111E2F;
+    border-radius: 50%;
+}
+
+.frontCam .lens{
+	position: absolute;
+    top: 48%;
+    left: 32%;
+    width: 1.5px;
+    height: 1.5px;
+    background: #000;
+    border-radius: 50%;	
+}
+
+
+/*===================Buttons Satrt=======================*/
+
+.power{
+	position: absolute;
+	top: 22%;
+	left: 98.3333%;
+	width: 5px;
+	height: 47px;
+	background: #101012;
+    border-radius: 10px;
+}
+
+.volumeOfOn{
+    position: absolute;
+    top: 14%;
+    left: -0.1%;
+    width: 5px;
+    height: 18px;
+    background: #101012;
+    border-radius: 10px;
+}
+
+.volumePlus{
+    position: absolute;
+    top: 20%;
+    left: -0.1%;
+    width: 5px;
+    height: 30px;
+    background: #101012;
+    border-radius: 10px;    
+}
+
+.volumeMinus{
+    position: absolute;
+    top: 28%;
+    left: -0.1%;
+    width: 5px;
+    height: 30px;
+    background: #101012;
+    border-radius: 10px; 
+}
+
+/*===================Buttons End=======================*/
+
+/*===================frontalPanel End=======================*/
+
+
+/*===================BackPanel Start=======================*/
+    .backPanel{
+        position: absolute;
+        top: 24%;
+        left: 57%;
+        transform: translate(-20%, -20%);
+        width: 245px;
+        height: 514px;  
+        border-radius: 48px;
+        border-top: 6.3px solid #393939;
+        border-bottom: 6.3px solid #393939;
+        border-left: none;
+        border-right: none;      
+    }
+
+    .backFrame{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 240px;
+        height: 510px;  
+        border: 5px double #2A2A2C;  
+        border-radius: 42px;
+        background: #101012;      
+    }   
+
+    .secondFrame{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 235px;
+        height: 510px;  
+        border: 4px double #2A2A2C;  
+        border-radius: 42px;      
+        border-top: none;  
+        border-bottom: none;  
+    }
+    
+
+    .dualCamera{
+        position: absolute;
+        top: 3%;
+        left: 7%;
+        width: 30px;
+        height: 70px;
+        border: double 4px #2A2A2C;
+        border-radius: 20px;
+        border-bottom: double 3px rgba(42,42,44,0.5);  
+        border-top: double 3px rgba(42,42,44,0.6);  
+        border-right: double 4px rgba(42,42,44,0.60);  
+    }
+
+    .dualCamera .camOne{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 17px;
+        height: 17px;
+        border: solid 1px #181818;
+        border-radius: 50%; 
+        background: #080E25;     
+    }
+
+    .dualCamera .camOne .lensOne{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%; 
+        background: linear-gradient(290deg, #06060F, #343642); 
+        opacity: 0.8;              
+    }
+
+    .dualCamera .camTwoo{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 17px;
+        height: 17px;
+        border: solid 1px #181818;
+        border-radius: 50%; 
+        background: #080E25;     
+    }    
+
+    .dualCamera .camTwoo .lensTwoo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%; 
+        background: linear-gradient(260deg, #06060F, #343642); 
+        opacity: 0.8;              
+    }    
+    
+    .dualCamera .cameraFlash{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);    
+      width: 13px;
+      height: 13px;
+      border-radius: 100%;
+      background-image: url(img/flash.png);
+      border: 0.1px solid #494949;
+    }
+
+    .secondFrame img{
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 50px;
+        height: 60px;
+        filter: brightness(0.22);
+
+    }
+    
+    .text h2{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, 50%);        
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;  
+        font-weight: normal;
+        letter-spacing: 1.1px;
+        text-align: center;
+        color: #303030;
+    }
+
+    .text p{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, 50%);           
+        text-align: center;
+        font-size: 8px;
+        padding-top: 10px;
+        font-weight: normal;
+        color: #303030;
+        font-family: "Raleway", sans-serif;
+        width: 190px;
+    }
+
+
+.backVolumeOfOn{
+    position: absolute;
+    top: 14%;
+    left: 99.9%;
+    width: 5px;
+    height: 18px;
+    background: #101012;
+    border-radius: 10px;    
+}
+
+.backPower{
+    position: absolute;
+    top: 22%;
+    left: -2%;
+    width: 5px;
+    height: 47px;
+    background: #101012;
+    border-radius: 10px;
+}
+.backVolumePlus{
+    position: absolute;
+    top: 20%;
+    left: 99.9%;
+    width: 5px;
+    height: 30px;
+    background: #101012;
+    border-radius: 10px;    
+}
+
+.backVolumeMinus{
+    position: absolute;
+    top: 28%;
+    left: 99.9%;
+    width: 5px;
+    height: 30px;
+    background: #101012;
+    border-radius: 10px; 
+}
+        
+/*===================BackPanel End=======================*/
+
