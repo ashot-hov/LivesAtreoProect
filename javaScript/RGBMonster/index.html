@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RGBMonster</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrap">
+		<h1>RGBMonter</h1>
+     <input type="range" id="r" value="0" min="0" max="255"     step="1" oninput="rgb(this)" /><span id="sr">0</span><br />
+     <input type="range" id="g" value="0" min="0" max="255" step="1" oninput="rgb(this)" /><span id="sg">0</span><br />
+    <input type="range" id="b" value="0" min="0" max="255" step="1" oninput="rgb(this)" /><span id="sb">0</span><br />
+
+		<div id="palitra"></div><br />
+		<input type="text" id="palitra_code" placeholder='rgba(0,0,0)'>
+		<p>Live`s - atreo 2018.</p>
+	</div>
+		
+	<script src='script.js'></script>
+</body>
+</html>

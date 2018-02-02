@@ -1,0 +1,79 @@
+html,body{
+			 font-family: 'Open Sans', sans-serif;
+			 font-size: 14px;
+			 margin: 0;
+			 padding: 0;
+			 min-height: 180px;
+			 width: 384px;
+		}
+		
+		h1{
+			text-align: center;
+			font-family: 'Menlo', monospace;
+			color: #eee;
+			padding-bottom: 20px;
+		}
+
+		h1:before{
+			content: "";
+			width: 80px;
+			height: 1.5px;
+			background: #fff;
+			position: absolute;
+			top: 80px;
+			left: 75px;
+		}
+
+		input[type=range]{
+			-webkit-appearance:none;
+			width:120px;
+			height:3px;
+			background:#000;
+			outline:none;
+		}
+
+		input[type=range]::-webkit-slider-thumb{
+			-webkit-appearance:none;
+			width:20px;
+			height:20px;
+			cursor: pointer;
+			border-radius:100%;
+			background:#fff;
+			border:2px solid #000;
+		}
+		
+		#palitra{
+			width:200px;
+			height:200px;
+			background:#ffff;
+			border:2px solid #000;
+		}
+
+		.wrap{
+			padding: 20px 10px 10px; 
+			width: 210px;
+			background: #333;
+		}
+
+		#palitra_code, input[type=range],span{
+			position: relative;
+			left: 15%;
+			transform: translate(-15%);
+		}
+
+		input[type=range]{
+			margin-bottom: 20px;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		span{
+			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+		}
+
+		p{
+			text-align: center;
+			position: relative;
+			margin: 35px 0 5px;
+			color: #eee;
+		}
