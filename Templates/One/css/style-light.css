@@ -1,0 +1,33 @@
+/* Light Css */
+body.bg-light {
+  background-color: #222;
+}
+.bg-silver-light {
+  background-color: #333;
+}
+.bg-light-text,.about-info h1 {
+  color: #111;
+}
+.bg-light .cs-counter-col {
+  background: transparent;
+}
+.about-info,.bg-light .portfolio-filter li a,.bg-light .section-title h2,.post-content .title+p,
+.bg-light .about-title-2 h2{
+  color: #FFF;  
+}
+.about-info h1 {
+  color: #272727;
+}
+.bg-light .service-style .inner-box {
+  background: #282828;
+}
+.bg-light .bg-dots {
+  background: rgba(0, 0, 0, 0) url("../images/dots1.png")/*tpa=http://demo.iamhafiz.me/bizness/images/dots1.png*/ repeat scroll 0 0;
+}
+.bg-light .border-2 {
+  border: 2px solid #333;
+}
+.contact-item {
+	box-shadow: none;
+	border: 1px solid #393939;
+}
