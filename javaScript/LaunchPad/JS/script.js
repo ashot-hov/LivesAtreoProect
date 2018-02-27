@@ -21,7 +21,7 @@ document.onkeydown = function(event){
 // ===============================Four Start===================================================
 
 	if(event.code == "KeyP"){
-		startMusic.src = "C:/Users/root/Desktop/LaunchPad/sounds/s1.wav";
+		startMusic.src = "sounds/s1.wav";
 		startMusic.play();
 
 		function active(){
