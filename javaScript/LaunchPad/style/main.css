@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background: url(https://wallpaperscraft.ru/image/gorod_noch_panorama_117682_1920x1080.jpg) no-repeat;
+	background-size: cover;
+}
+
+.enf{
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translate(-50%, 5%);
+}
+
+.bit{
+	width: 50px;
+	height: 50px;
+	border: 2px solid #eee;
+	display: inline-block;
+	margin: 10px;
+	border-radius: 8px;
+	background: rgba(255,255,255,0.1);
+	text-align: center;
+	transition: 0.1s ease-in-out;
+}
+
+.bit > span{
+	position: relative;
+	top: 20%;
+	font-size: 30px;
+	font-family: arial, sans-serif;
+	color: #fff;
+}
+
+.wrap{
+	width: 80px;
+}
+
+
+.one{background: red; display: inline-block;} .three{background: green; display: inline-block; position: absolute; left: 74.3%;} 
+.twoo{background: blue; width: 310px;} 
+.four{background: orange; width: 310px;} .five{background: orangered; width: 310px;}
+
+
+.active{
+	transform: scale(1.13);
+	background: linear-gradient(#333, #eee);
+}
