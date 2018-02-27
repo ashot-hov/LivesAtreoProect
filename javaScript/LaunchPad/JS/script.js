@@ -57,7 +57,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyL"){
-		startMusic.src = "../sounds/s3.wav";
+		startMusic.src = "sounds/s3.wav";
 		startMusic.play();
 
 		function active(){
@@ -75,7 +75,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyK"){
-		startMusic.src = "../sounds/s4.wav";
+		startMusic.src = "sounds/s4.wav";
 		startMusic.play();
 
 		function active(){
@@ -93,7 +93,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyO"){
-		startMusic.src = "../sounds/s2.wav";
+		startMusic.src = "sounds/s2.wav";
 		startMusic.play();
 
 		function active(){
@@ -116,7 +116,7 @@ document.onkeydown = function(event){
 // ===================================Five Start=========================================
 
 	if(event.code == "KeyZ"){
-		startMusic.src = "../sounds/t1.wav";
+		startMusic.src = "sounds/t1.wav";
 		startMusic.play();
 
 		function active(){
@@ -135,7 +135,7 @@ document.onkeydown = function(event){
 
 
 	if(event.code == "KeyX"){
-		startMusic.src = "../sounds/t2.wav";
+		startMusic.src = "sounds/t2.wav";
 		startMusic.play();
 
 		function active(){
@@ -154,7 +154,7 @@ document.onkeydown = function(event){
 
 
 	if(event.code == "KeyM"){
-		startMusic.src = "../sounds/t3.wav";
+		startMusic.src = "sounds/t3.wav";
 		startMusic.play();
 
 		function active(){
@@ -173,7 +173,7 @@ document.onkeydown = function(event){
 
 
 	if(event.code == "KeyN"){
-		startMusic.src = "../sounds/t4.wav";
+		startMusic.src = "sounds/t4.wav";
 		startMusic.play();
 
 		function active(){
@@ -197,7 +197,7 @@ document.onkeydown = function(event){
 
 
 	if(event.code == "Digit1"){
-		startMusic.src = "../sounds/1.mp3";
+		startMusic.src = "sounds/1.mp3";
 		startMusic.play();
 
 		function active(){
@@ -215,7 +215,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "Digit2"){
-		startMusic.src = "../sounds/2.wav";
+		startMusic.src = "sounds/2.wav";
 		startMusic.play();
 
 		function active(){
@@ -233,7 +233,7 @@ document.onkeydown = function(event){
 	}	
 
 	if(event.code == "Digit9"){
-		startMusic.src = "../sounds/r1.wav";
+		startMusic.src = "sounds/r1.wav";
 		startMusic.play();
 
 		function active(){
@@ -251,7 +251,7 @@ document.onkeydown = function(event){
 	}	
 
 	if(event.code == "Digit0"){
-		startMusic.src = "../sounds/r2.wav";
+		startMusic.src = "sounds/r2.wav";
 		startMusic.play();
 
 		function active(){
@@ -273,7 +273,7 @@ document.onkeydown = function(event){
 // ===================================Three End=========================================
 
 	if(event.code == "KeyQ"){
-		startMusic.src = "../sounds/a1.wav";
+		startMusic.src = "sounds/a1.wav";
 		startMusic.play();
 
 		function active(){
@@ -292,7 +292,7 @@ document.onkeydown = function(event){
 
 
 	if(event.code == "KeyW"){
-		startMusic.src = "../sounds/a2.wav";
+		startMusic.src = "sounds/a2.wav";
 		startMusic.play();
 
 		function active(){
@@ -310,7 +310,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyE"){
-		startMusic.src = "../sounds/a3.wav";
+		startMusic.src = "sounds/a3.wav";
 		startMusic.play();
 
 		function active(){
@@ -328,7 +328,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyR"){
-		startMusic.src = "../sounds/a4.wav";
+		startMusic.src = "sounds/a4.wav";
 		startMusic.play();
 
 		function active(){
@@ -346,7 +346,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyT"){
-		startMusic.src = "../sounds/a5.wav";
+		startMusic.src = "sounds/a5.wav";
 		startMusic.play();
 
 		function active(){
@@ -365,7 +365,7 @@ document.onkeydown = function(event){
 
 
 	if(event.code == "KeyA"){
-		startMusic.src = "../sounds/a6.wav";
+		startMusic.src = "sounds/a6.wav";
 		startMusic.play();
 
 		function active(){
@@ -383,7 +383,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyS"){
-		startMusic.src = "../sounds/a8.wav";
+		startMusic.src = "sounds/a8.wav";
 		startMusic.play();
 
 		function active(){
@@ -401,7 +401,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyD"){
-		startMusic.src = "../sounds/a9.wav";
+		startMusic.src = "sounds/a9.wav";
 		startMusic.play();
 
 		function active(){
