@@ -21,7 +21,7 @@ document.onkeydown = function(event){
 // ===============================Four Start===================================================
 
 	if(event.code == "KeyP"){
-		startMusic.src = "../sounds/s1.wav";
+		startMusic.src = "sounds/s1.wav";
 		startMusic.play();
 
 		function active(){
@@ -39,7 +39,7 @@ document.onkeydown = function(event){
 	}
 
 	if(event.code == "KeyO"){
-		startMusic.src = "../sounds/s2.wav";
+		startMusic.src = "sounds/s2.wav";
 		startMusic.play();
 
 		function active(){
