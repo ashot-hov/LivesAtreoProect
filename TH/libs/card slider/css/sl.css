@@ -1,0 +1,34 @@
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width:960px;
+        height:900px;
+        position:relative;
+    /*    clear:both;*/
+        overflow:hidden;
+        background:#FFF;
+        margin: 0px auto;
+      }
+      #carousel img {
+/*        visibility:hidden; *//* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+        border: solid #000 2px;
+        width: 250px;
+      }
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
