@@ -1,0 +1,539 @@
+$ff : 'Dosis', sans-serif;
+$fz : 16px; 
+$gradientBg : linear-gradient(90deg, #fd712c, #f31e7a);
+$pinkk : #f31f79;
+$txtColor : #222222;
+$pcolor: #777;
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600,700');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body{
+	font-size: $fz;
+	font-family: $ff;
+}
+
+/*========================Navigation Menu===============================*/
+
+.headerBanner{
+	background-image: url(../img/iPhones.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 637px;
+	padding: 20px
+}
+
+.topnav{
+	/*overflow: hidden;*/
+}
+
+.topnav ul{
+ 	float: right;
+	display: flex;
+	margin-top: 5px;
+}
+
+.topnav a{
+  display: block;
+  color: #ffff;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.topnav a:nth-child(4){
+	padding: 0;
+	button{
+		border: none;
+		color: $txtColor;
+		padding: 10px 30px;
+		font-weight: 600;
+		border-radius: 6vh;
+		margin-left: 5vh;
+		background: #fff;
+	}
+}
+
+.topnav .icon{
+	display: none;
+}
+
+
+@media screen and (max-width: 768px){
+	.topnav a{display: none;}
+	.topnav a.icon{
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.topnav.responsive{position: relative;}
+	.topnav.responsive .icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	} 
+	
+	.topnav ul{
+		display: block;
+		position: absolute;
+		top: -35%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 35%);
+		background: rgba(0,0,0,0.80);
+		z-index: 999;
+		a{
+			font-size: 22px;
+			padding: 3vh 5vh;
+
+		}
+
+		a:hover:not(:last-child){
+			background-color: rgba(255,255,255,0.3);
+			box-shadow: 0 0 40px #000;
+
+		}
+
+		button{
+			margin: 20px;
+		}
+
+	}
+
+	.topnav.responsive a{
+		transition: 0.3s ease-in-out;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+
+}
+
+
+/*==================Header Under===========================*/
+
+.headerUnder{
+	padding: 50px 0;
+	color: #fff;
+	font-weight: 600;
+
+	h1{
+		font-size: 40px;
+	}
+
+	p{
+		padding: 0 0 20px 0;
+	}
+
+	li{
+		list-style: none;
+	}
+
+	i{
+		padding: 10px 20px 10px 0;
+	}
+
+	button{
+		border: none;
+		color: $txtColor;
+		padding: 10px 50px;
+		font-weight: bold;
+		border-radius: 6vh;
+		background: #fff;
+		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
+		margin-top: 6vh;
+	}
+
+}
+
+
+/*===============================Features====================================*/
+
+.features{
+	margin: 60px 0 80px 0;
+	position: relative;
+	p{
+		color: $pcolor;
+	}
+	.block{
+		margin: 20px 40px;
+		h3{
+			margin: 0 0 10px;
+		}
+	}
+
+	.icon{
+		position: absolute;
+		top: 30%;
+		left: -5%;
+
+		i{
+			color: $pinkk;
+			border: solid #efefef 2px;
+			padding: 15px;
+			border-radius: 50%;
+		}
+	}
+}
+
+
+.features::before{
+   display: block;
+   position: absolute;
+   content: "";
+   height: 2px;
+   width: 80%;
+   background: #efefef;
+   left: 7%;
+   bottom: -10vh;	
+}
+
+
+/*=======================Don`t Leave===========================*/
+
+.phone img{
+	width: 160vh;
+	position: relative;
+	left: -50%;
+}
+
+.wrap{
+	margin: 18vh 0 0;
+	font-weight: 500;
+	p,li{color: $pcolor;}
+
+	h2{
+		font-weight: 500;
+		margin: 0 0 10px 0;
+		font-size: 30px;
+	}
+
+	p:nth-child(2) {
+   		margin: 0 0 50px;
+	}
+
+	p:nth-child(3) {
+   		margin: 0 0 20px;
+	}
+
+	li{
+		list-style: none;
+		padding: 10px 0;
+		font-weight: 600;
+		i{
+			padding: 0 20px 0 0;
+			color: #222;
+		}
+	}
+}
+
+/*============================Screenshots================================*/
+
+.screenshots{
+	text-align: center;
+	background: #f7fafc;
+	h2{
+		margin: 100px 0 20px;
+		font-size: 30px;
+	}
+	p{
+		color: $pcolor;
+		margin: 0 0 20px;
+	}
+}
+
+
+/*============================Prise Cards===================================*/
+
+.pricing{
+	margin-bottom: 100px;
+	text-align: center;
+	h2{
+		margin: 100px 0 20px;
+		font-size: 30px;
+	}
+	p{
+		color: $pcolor;
+		margin: 0 0 100px;	
+	}
+
+	.red{
+		background: #fff !important;
+  		box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  		button{
+  			background-image: $gradientBg !important;
+  			border: solid #eee 4px !important;
+  			color: #fff!important;
+  			font-weight: bold!important;
+  		}
+	}
+
+
+
+	.cards{
+		background: #f7fafc;
+		margin: 0 20px;
+		img{
+			width: 100%;
+		}
+
+		h4{
+  			font-size: 20px;
+  			font-family: "Dosis";
+  			color: rgb(51, 51, 51);
+  			line-height: 1.2;
+  			padding: 15px 0;
+		}
+
+		.plan{
+			margin: 30px 0;
+			p{
+				font-size: 14px;
+  				font-weight: 600;
+  				color: #484747;
+  				line-height: 2.143;
+  				position: relative;
+  				margin: 5px 0;
+
+			}
+
+			p:before{
+				display: block;
+			   	position: absolute;
+			   	content: "";
+			   	height: 2px;
+			   	border-bottom: dashed 1px #eee;
+			   	width: 70%;
+			   	left: 15%;
+			   	bottom: 0;	
+			}
+		}
+
+		span{
+			color: $pcolor;
+			font-size: 15px;
+		}
+
+		button{
+			padding: 7px 50px;
+			border-radius: 30px;
+			border: solid #eee 1px;
+			background: #fff;
+			margin: 10px 0 30px;
+			font-weight: bold;
+		}
+	}
+}
+
+/*=====================Video Section==================================*/
+
+.video{
+	background-image: url(../img/Image.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 40vh;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+	button{
+		border: none;
+		color: #fff;
+		background: $gradientBg;
+		padding: 20px 25px;
+		border-radius: 50%;
+		position: relative;
+		left: 50%;
+		transform: translate(-50%);
+	}
+}
+
+
+/*==============================FeedBack Sectiion================================*/
+
+.feedback{
+	text-align: center;
+		h2{
+		margin: 100px 0 20px;
+		font-size: 30px;
+	}
+	p{
+		color: $pcolor;
+		margin: 0 0 100px;	
+	}
+
+	.elem{
+		width: 150px;
+		height: 80px;
+		background: #000;
+	}
+}
+
+
+.sideSlider{
+	/*margin-bottom: 50px;*/
+}
+
+.item{
+	background: #f7fafc;
+	padding: 20px;
+	margin: 20px 5px;
+	img{
+		width: 30%;	
+	}
+	p{
+		margin: 0 0 20px;
+		text-align: left;
+	}
+	
+	.user{
+		position: absolute;
+		text-align: left;
+		top: 66%;
+		left: 38%;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+	span{
+		color: $pcolor;
+	}
+
+}
+
+.white{
+	background: #fff;
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.slick-prev, .slick-next{
+	background: red !important;
+}
+
+.carousel-wrap {
+ 	margin: 50px auto;
+  	padding: 0 5%;
+  	width: 80%;
+  	position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  	position: relative;
+  	z-index: 100; 
+  	-webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+}
+
+.owl-nav i {
+	font-size: 13px;
+	border-radius: 50%;
+	border: solid 1px #efefef;
+	padding: 10px;
+}
+
+.owl-nav i:active {
+	background: $gradientBg;
+	color: #fff;
+}
+
+.owl-nav .owl-prev {
+	position: absolute;
+  	left: -10%;
+  	top: 35%;
+}
+
+.owl-nav .owl-next {
+  	position: absolute;
+  	right: -10%;
+  	top: 35%;
+}
+
+
+/*============================Download Section=============================*/
+
+.download{
+	background-image: $gradientBg;
+	h2{
+		text-align: center;
+		color: #fff;
+		font-weight: 500;
+		margin: 80px 0 50px;
+		font-size: 30px;
+	}
+	
+	.row{
+		margin-bottom: 80px;
+	}
+	
+		.platform{
+			background-color: #fff;
+			margin: 5px;
+			padding: 20px 0;
+
+			h4,span{
+				margin: 0 0 0 35%;
+			}
+			h4{
+				font-size: 22px;
+			}
+			span{
+				font-size: 14px;
+				color: $pcolor;
+			}
+			i:hover{
+				background: $gradientBg;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				display: table;
+			}
+			i{
+				font-size: 50px;
+				position: absolute;
+				top: 20%;
+				left: 15%;
+				color: $pcolor;
+			}
+		}
+	
+}
+
+/*=============================Footer======================================*/
+
+footer{
+	/*margin-bottom: 150px;*/
+	background: #222;
+	color: #fff;
+	text-align: center;
+	border-bottom: solid 3px #323232;
+	.links{
+		margin: 40px 0 20px;
+		i{
+			padding: 10px;
+			font-size: 20px;
+			color: #fff;
+		}
+		i:hover{
+			color: #f31f79;
+		}
+	}
+
+	p{
+		margin-bottom: 40px;
+	}
+}
