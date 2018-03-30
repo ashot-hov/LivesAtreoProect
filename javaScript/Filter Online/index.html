@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Online CSS3 Filters </title>
+ 	<link rel="stylesheet" href="man.css">
+ </head>
+ <body>
+
+ 	<div class="cont">
+ 		<div class="choice">
+ 			<label><input type="text" id="imgLink"> <button id="enter">enter</button></label>
+ 			<img src="https://images.pexels.com/photos/234248/pexels-photo-234248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+ 			<img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+ 			<img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+ 			<img src="https://images.pexels.com/photos/281184/pexels-photo-281184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+ 		</div>
+ 		<div class="defaultImg">
+ 			<img src="https://images.pexels.com/photos/281184/pexels-photo-281184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+ 			<button id="viewCode">View Code</button>
+ 		</div>	
+ 		<!-- <input type="file"> -->
+		<div class="properties">
+ 				<label>
+ 					border top left radius
+ 					<input type="range"  min="0" max="100" step="1" id="radiusTopL">
+ 				</label><br>
+ 				<label>
+ 					border top right radius
+ 					<input type="range" min="0" max="100" id="radiusTopR">
+ 				</label><br>
+ 				<label>
+ 					border bottom left radius
+ 					<input type="range" min="0" max="100" id="radiusBotL">
+ 				</label><br>
+ 				<label>
+ 					border bottom right radius
+ 					<input type="range" min="0" max="100" id="radiusBotR">
+ 				</label><br>
+ 				<label>
+ 					border radius
+ 					<input type="range" min="0" max="100" id="radius">
+ 				</label><br>
+ 		</div>
+
+ 		<div class="navbar">
+ 			<label for="">grayscale 
+ 				<input type="range" min="0" max="100" step="1" id="f1">
+ 				<span id="rnageVal"></span><br>
+ 			</label>
+ 			
+ 			<label for="">blur
+  				<input type="range" min="0" max="100" step="1" id="f2">
+  				<span id="rnageVal2"></span><br>
+ 			</label>
+ 			
+ 			<label for="">Brightness
+ 				<input type="range" min="0" max="100" step="1" id="f3">
+  				<span id="rnageVal3"></span><br>
+ 			</label>
+ 			
+
+ 			<label for="">Contrast
+ 				<input type="range" min="0" max="100" step="1" id="f4">
+  				<span id="rnageVal4"></span><br>
+ 			</label>
+ 			
+
+ 			<label for="">Hue-rotate
+ 				<input type="range" min="0" max="100" step="1" id="f5">
+  				<span id="rnageVal5"></span><br>
+ 			</label>
+ 			
+
+ 			<label for="">Opacity
+ 				<input type="range" min="0" max="100" step="1" id="f6">
+  				<span id="rnageVal6"></span><br>
+ 			</label>
+ 			
+
+ 			<label for="">sepia
+ 				<input type="range" min="0" max="100" step="1" id="f7">
+  				<span id="rnageVal7"></span><br><br>
+ 			</label>
+ 			
+ 		</div>
+
+ 		<div id="code" class="code">
+ 			
+ 		</div>
+ 	</div>
+
+
+ 	<script src="common.js"></script>
+ </body>
+ </html> 
