@@ -47,7 +47,7 @@ btn.onclick = function(){
 
 	console.log(mysum);
 
-	count.innerText = mysum + " RUB";
+	count.innerText = mysum + " rub";
 
 
 
