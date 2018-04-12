@@ -1,0 +1,139 @@
+body ,html{
+  margin: 0;
+  height:100%;
+  font-family: Times;
+}
+.container{
+  width:100%;
+  height:100%;
+  display:table;
+}
+.t-c{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.calendar {
+  display:inline-block;
+  width: 300px;
+  margin:auto;
+  background: #333;
+  box-shadow: 0 5px 25px rgba(16, 16, 16, 0.5);
+  color: #fff;
+}
+.current {
+  text-align: center;
+  background: rgb(50, 180, 50);
+  cursor: default;
+  float:left;
+  padding:20px 0;
+  width:100%;
+}
+.date {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 40px;
+}
+.month {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+.day {
+  height: 30px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 30px;
+}
+.year {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  font-size: 30px;
+}
+.date-small {
+  list-style-type: none;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+/*  float:left; */
+  display:inline-block;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.date-small:hover {
+  background: #444;
+}
+.datelist {
+/*  height: 190px; */
+  float:left;
+  width:100%;
+  height:100%;
+  background:#333;
+  box-shadow: 0 -25px 25px -25px rgba(16, 16, 16, 0.5);
+}
+.today {
+  background: rgb(50, 180, 50);
+  color: #fff;
+}
+.today:hover {
+  background: #58e;
+  transition:0.3s;
+}
+.day-full {
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  text-align: center;
+  cursor: default;
+}
+
+
+.workday{
+  border-bottom: solid 2px orangered;
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc{
+  position: absolute;
+  width: 300px;
+  height: 432px;
+  top: 16%;
+  z-index: -1;
+  left: 39%; /*39%*/ /*25%*/
+  background: rgba(85,220,107,0.90);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  overflow: auto;
+}
+
+.view{
+    z-index: 1;
+    left: 25%;
+    opacity: 1
+}
+
+label div{
+  display: inline-block;
+  font-size: 5px;
+}
+
+
+/*При клике на новую дату создавать новый отдельный див */
+
+/*Ссылка на скрипты для создания .txt файла на JS: https://jsfiddle.net/uselesscode/qm5ag/   
+   http://qaru.site/questions/571080/how-to-create-txt-file-using-javascript-html5 
+   http://www.codingclub.net/Articles/JavaScript/Sozdanie_fajla_pri_pomoschi_JavaScript  
+   */
