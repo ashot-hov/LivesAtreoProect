@@ -32,7 +32,7 @@ input.oninput = function(){
 	// out.innerText = this.value;
 }
 
-btn.onclick = function(){
+calc.onchange = function(){
 	let mony = document.createElement("div");
 	// document.body.(mony, count);
 	wrap.appendChild(mony);
@@ -42,14 +42,14 @@ btn.onclick = function(){
 
 
 	sumArr.push(mony.innerHTML);
-	console.log(sumArr);
+	// console.log(sumArr); stop
 
 	let numArr = []
 	for(i = 0; i < sumArr.length; i++){
 		numArr.push(Number(sumArr[i]));
 	}
 	// numArr.push(Number(sumArr));
-	console.log(numArr);
+	// console.log(numArr); stop
 
 	for(let i = 0; i < numArr.length; i++){
 		sum = sum + parseInt(numArr[i]);
@@ -68,8 +68,19 @@ btn.onclick = function(){
 		myDate.innerHTML = day + "/" + month + "/" + year;
 
 
+		let mysum = numArr.reduce(add, 0);
+		function add(a,b){
+			return a + b;
+		}
+
+		// console.log(mysum); stop 
+
+		count.innerText = "= " + mysum;
+
+
+
 		var type = 'data:application/octet-stream;base64, ';
-		var text = "Price of each order: " + numArr + "    Date: " + day + "/" + month + "/" + year;
+		var text = "Price of each order: " + numArr + ";" + "  Total:   " + mysum + ";" + "    Date: " + day + "/" + month + "/" + year;
 		var base = btoa(text);
 		var res = type + base;
 		// document.getElementById('test').href = res;
@@ -89,15 +100,7 @@ btn.onclick = function(){
 	// 	return console.log(a + b);
 	// })
 
-	let mysum = numArr.reduce(add, 0);
-	function add(a,b){
-		return a + b;
-	}
-
-	console.log(mysum);
-
-	count.innerText = "= " + mysum;
-
+	
 
 
 
