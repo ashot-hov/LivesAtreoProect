@@ -1,55 +1,4 @@
-// const img = document.querySelector("img"),
-// 	  range = document.querySelectorAll("input");
-
-// let sepia = 'sepia(0%) ',
-// blur =' grayscale(0%) ';
-
-// f1.addEventListener("input", function(){
-// 	sepia = "sepia(" + f1.value + '%' + ")";
-
-// 	img.style.filter = sepia;
-
-
-	
-// })
-
-// f2.addEventListener("input", function(){
-// 	blur = "blur(" + f1.value + f2.value + '%' + ")";
-// 	console.log(blur);
-// 	img.style.filter = blur;
-
-
-	
-// })
-
-
-// // f2.addEventListener("input", function(){
-	
-// // 	img.style.filter = "blur(" + f2.value  /30 + 'px' + ")";
-
-// // })
-
-// // f3.addEventListener("input", function(){
-// // 	img.style.filter = "brightness(" + f3.value + '%' + ")";
-// // })
-
-// // f4.addEventListener("input", function(){
-// // 	img.style.filter = "contrast(" + f4.value *2 + '%' + ")";
-// // })
-
-// // f5.addEventListener("input", function(){
-// // 	img.style.filter = "hue-rotate(" + f5.value  + 'deg' + ")";
-// // })
-
-
-
-
-
-
-
-// =================================================================================================
-
-const img = document.querySelector(".defaultImg > img"),
+const img = document.querySelector(".defaultImg"),
 	  range = document.querySelectorAll("input");
 
 const getFiltres = () => `grayscale( ${f1.value}% )
@@ -104,17 +53,29 @@ f7.addEventListener("input", function(){
 
 for(let i = 0; i < range.length; i++){
 	range[i].addEventListener("input", function(){
-		code.innerHTML = `<h2>CSS code</h2>` + `<a id="close">&times;</a>` + `img{` + "<br>" + "     filter: " + getFiltres() + ";" + "<br>" + `}` ;
-		code.classList.add("code");
-		let closed = document.querySelector("#close");
-		closed.addEventListener("click",function(){code.style.display = "none"});
+		code.innerHTML = `<h2>CSS code</h2>` + `<a id="close">&times;</a>` + `img{` + "<br>" + "     filter: " + getFiltres() + ";" + "<br>" + `}` ;		
+		// code.classList.add("sideCode");
+	let closed = document.querySelector("#close");
+		closed.addEventListener("click",function(){code.classList.remove("sideCode")});
 	})
+
+	
+
+		// filterCode.addEventListener("clcik", function(){
+		// 	// code.classList.toggle("sideCode");
+		// })
 
 }
 
+filterCode.onclick = function(){
+	// alert("sdf")
+	code.classList.toggle("sideCode");
+}
 
 
-viewCode.addEventListener("click",function(){code.style.display = "block"});
+code.innerHTML = getFiltres;
+
+// viewCode.addEventListener("click",function(){code.style.display = "block"}); stop
 
 
 // ================================================================ radius 
@@ -151,61 +112,106 @@ radius.oninput = function(){
 // ================================================== Choice Img
 
 
-const choiseImg = document.querySelectorAll(".choice > img");
+const choiseImg = document.querySelectorAll(".selectImg > img");
 
 for(let i = 0; i < choiseImg.length; i++){
 	choiseImg[i].addEventListener("click", function(){
-		img.src = choiseImg[i].src;
+		img.style.background = "url(" + choiseImg[i].src + ")";
+		img.classList.add("responsive");
 	})
+
+	// если путь картинки не будет равен img[i] то тогда выводить надпись image is not defined
+
 }
 
 enter.addEventListener("click", function(){
 	img.src = imgLink.value;
+	img.style.background = "url(" + imgLink.value + ")";
+	img.classList.add("responsive");
+	if(imgLink.value === "" || imgLink.value === NaN || imgLink.value === undefined){
+		img.style.background  = "url(https://images.pexels.com/photos/281184/pexels-photo-281184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)";
+		img.classList.add("responsive");
+	}
+
 	imgLink.value = "";
 })
 
 
 
 
+filterMenu.addEventListener("click", function(){
+	sideMenu.classList.add("side");
+})
+
+closeFilter.addEventListener("click", function(){
+	sideMenu.classList.remove("side");
+})
+
+
+borderMenu.addEventListener("click", function(){
+	radiusMenu.classList.add("side");
+})
+
+closeRadiusMenu.addEventListener("click", function(){
+	radiusMenu.classList.remove("side");
+})
+
+addText.addEventListener("click", function(){
+	plusText.classList.add("sidepanel");
+})
+
+closeTextMenu.addEventListener("click", function(){
+	plusText.classList.remove("sidepanel");
+})
+
+
+// ==================================================================== Adding Text on the image 
+
+const textarea = document.querySelector(".defaultImg > p");
+
+
+
+textInput.addEventListener("input", function(){
+	textarea.innerHTML = this.value;
+})
+
+textInput.addEventListener("click", function(){
+	textarea.innerHTML = "Enter Your Text";
+})
+
+topBottom.addEventListener("input", function(){
+	textarea.style.top = this.value + "%";
+	val.innerHTML = this.value + "%";
+})
+
+leftright.addEventListener("input", function(){
+	textarea.style.left = this.value + "%";
+	val.innerHTML = this.value + "%";
+})
+
+size.addEventListener("input", function(){
+	textarea.style.fontSize = this.value + "px";
+})
+
+function rgb(e){
+	sr.innerHTML = r.value;
+	sg.innerHTML = g.value;
+	sb.innerHTML = b.value;
+	palitra.style.background = "rgb(" + r.value + "," + g.value + "," + b.value + ")";
+	palitra_code.value = "rgb(" + r.value + "," + g.value + "," + b.value + ")";
+	textarea.style.color = "rgb(" + r.value + "," + g.value + "," + b.value + ")";
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
+	
+	добавить возможность увеличть изображение через scale колесиком мыши 
+	и возможность добавлять текст 
+	
+		
+*/
 
 
 

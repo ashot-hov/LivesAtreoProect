@@ -1,0 +1,46 @@
+.defaultImg > img {
+  width: 50%;
+  /*filter:hue-rotate(90deg) drop-shadow(8px 8px 10px gray) contrast(200%);*/
+}
+
+.choice > img{
+	width: 15%;
+	height: 150px;
+	cursor: pointer;
+}
+
+/*# sourceMappingURL=man.css.map */
+
+
+.code{
+	border: solid 2px #333;
+	width: 920px;
+	background: #eee;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 150px#000;
+	display: none;
+	height: auto;
+}
+
+.defaultImg{
+	width: 70%;
+	float: left;	
+}
+
+.properties{
+	width: 100%;
+	float: right;
+}
+
+.code a{
+	font-size: 30px;
+	color: #000;
+	cursor: pointer;
+	font-weight: bold;
+	position: absolute; 
+	left: 90%;
+	top: 0;
+}
