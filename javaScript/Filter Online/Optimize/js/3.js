@@ -1,0 +1,1 @@
+radiusTopL.oninput=function(){img.style.borderTopLeftRadius=this.value+"%"};radiusTopR.oninput=function(){img.style.borderTopRightRadius=this.value+"%"};radiusBotL.oninput=function(){img.style.borderBottomLeftRadius=this.value+"%"};radiusBotR.oninput=function(){img.style.borderBottomRightRadius=this.value+"%"};radius.oninput=function(){img.style.borderRadius=this.value+"%"};

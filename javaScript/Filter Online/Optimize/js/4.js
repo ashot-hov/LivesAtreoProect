@@ -1,0 +1,3 @@
+const choiseImg=document.querySelectorAll(".selectImg > img");for(let i=0;i<choiseImg.length;i++){choiseImg[i].addEventListener("click",function(){img.style.background="url("+choiseImg[i].src+")";img.classList.add("responsive");})}
+enter.addEventListener("click",function(){img.src=imgLink.value;img.style.background="url("+imgLink.value+")";img.classList.add("responsive");if(imgLink.value===""||imgLink.value===NaN||imgLink.value===undefined){img.style.background="url(https://images.pexels.com/photos/281184/pexels-photo-281184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)";img.classList.add("responsive");}
+imgLink.value="";})
