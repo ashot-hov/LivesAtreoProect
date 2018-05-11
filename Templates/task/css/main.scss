@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+$ff : 'Roboto', sans-serif;;
+$green : #009e82;
+$txtColor : #171717;
+$stxtColor : #565653;
+$gray : #c5c5c2;
+
+
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: $ff;
+}
+
+.cont{
+	text-align: center;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+	background-position: bottom;
+	min-height: 650px;
+}
+
+.wrap{
+	margin: 150px 0 0;
+	h1{
+		margin: 0 0 70px;
+		font-size: 35px;
+ 		font-weight: normal;
+	}
+}
+
+.border{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.card{
+		background: rgba(255,255,255,0.55);
+		border-radius: 50%;
+		height: 250px;
+		width: 250px;
+		cursor: pointer;
+		
+		.hover-item{
+			height: 235px;
+			width: 235px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+		}
+
+		.hover-item:hover{
+			border: solid 2px $green;
+		}
+			
+		img{
+			margin: 30% 0 0;
+		}
+
+		p{
+			margin: 20px 0 0;
+			font-weight: 500;
+			display: block;
+			font-size: 16px;
+			color: #333;
+		}
+	}
+}
+
+
+
+
+.main-section{
+	background-image: url(../img/secondbg.png);
+	background-size: cover;
+	background-position: bottom;
+	min-height: 650px;
+}
+
+
+.tabs{
+	text-align: center;
+	border-bottom: solid $gray;
+	span{
+		padding: 30px 50px 25px;
+		font-size: 17px;
+	}
+}
+
+
+.wrapper .active{
+	color: $green;
+
+	&:before{ 
+		content: "";
+		display: block;
+		border-bottom: solid $green 3px;
+		position: relative;
+		top: 52px;
+	}
+}
+
+.tab {
+  cursor: pointer;
+
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.tab_item .sect{
+	margin: 60px 0 0 80px;
+}
+
+
+.text ul >li,p{
+	display: inline-block;
+}
+
+
+ul{
+	
+	padding: 20px 0 20px;
+
+	li {
+		padding: 0 0 5px 0; 
+		font-weight: 500;
+		font-size: 15px;
+		letter-spacing: 0.2px;
+
+		p{
+			font-size: 25px;
+			padding: 0 8px 5px 0;
+			color: $green;
+		}
+
+	}
+}
+
+.sect button{
+	color: #fff;
+	background: $green;
+	border: none;
+	padding: 10px 25px;
+	font-size: 15px;
+	font-weight: 500;
+	border-radius: 5px;
+	transition: 0.1s ease-in-out;
+
+	&:hover{
+		background: #fff;
+		color: $green;
+		border: solid 0.5px $green;
+
+	}
+}
+
+
+.sect{
+	margin-bottom: 150px!important;
+
+	h3{
+		font-size: 25px;
+		font-weight: 400;
+		padding: 40px 0 0;
+	}
+
+	p{
+		font-size: 15.3px;
+		font-weight: 500;
+		letter-spacing: 0.2px;
+	}
+
+}
