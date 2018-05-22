@@ -1,6 +1,6 @@
 
 const input = document.querySelector("#input"),
-	  val = ["hello", "well", "bell", "Ashot", "closer", "close", "meddle", "run", "user", "big", "timer", "set", "interval", "placeholder", "float", "display", "zero", "up", "down", "hot", "cool", "col", "key", "mouse", "element", "good", "get", "bad", "main", "eco", "clock", "click", "align", "center", "right", "left", "personal", "kiss", "brother", "single", "shift", "asus", "lives", "atreo", "samsung", "xiaomi", "meizu", "lol", "link", "border", ""]
+	  val = ["hello", "well", "bell", "Ashot", "closer", "close", "meddle", "run", "user", "big", "timer", "set", "interval", "placeholder", "float", "display", "zero", "up", "down", "hot", "cool", "col", "key", "mouse", "element", "good", "get", "bad", "main", "eco", "clock", "click", "align", "center", "right", "left", "personal", "kiss", "brother", "single", "shift", "asus", "lives", "atreo", "samsung", "xiaomi", "meizu", "lol", "link", "border"]
 
 let rnad = valRandom(0, val.length);
 
