@@ -1,0 +1,72 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #eee;
+	font-family: Arial;
+}
+
+.cont{
+	/*border: solid 2px blue;*/
+	width: 50%;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.wrap{
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+
+.newTask{
+	display: flex;
+	justify-content: center;
+	/*border: solid 2px red;*/
+	width: 100%;
+}
+
+
+p{
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 22px;
+}
+
+span{
+	cursor: pointer;
+	padding: 0 10px 0 10px;
+	font-size: 18px;
+	color: red;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.4s;
+	animation: fadeOut 0.4s linear;
+}
+
+@keyframes fadeOut{
+	from{
+		transform: scale(1.5);
+	}
+	to{
+		transform: scale(0);
+	}
+}
+
+.done{
+	border-bottom: solid green 3px;
+}
+
+#data{
+	width: 10%;
+	transition: 0.5s ease-in-out;
+}
+
+#data:focus{
+	width: 25%;
+}
