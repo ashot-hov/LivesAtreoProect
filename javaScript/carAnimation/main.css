@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+
+body{
+	background: #f4f7f6;
+	overflow-x: hidden;
+}
+
+img{
+	width: 25%;
+}
+
+.cont{
+	/*border: 2px solid red;*/
+	width: 50%;
+	margin: 0 auto;}
+
+.cont .house{
+	width: 20%;
+	position: relative;
+	left: 250%;
+	top: 50px;
+	z-index: -1;
+	animation: side 8s linear infinite;
+	overflow: hidden;
+}
+
+.cont .houseTwoo{
+	width: 20%;
+	position: relative;
+	left: 180%;
+	top: 50px;
+	z-index: -1;
+	animation: side 7s linear infinite;
+	overflow: hidden;
+}
+
+
+.carWrap .car{
+	width: 30%;
+	position: absolute;
+	left: 15%;
+}
+
+.carWrap .firstWheel{
+	width: 6%;
+	position: absolute;
+	top: 32%;
+	left: 16.6%;
+	z-index: 1;
+	animation: spin 1s linear infinite;
+}
+
+.carWrap .SecondWheel{
+	width: 6%;
+	position: absolute;
+	top: 32%;
+	left: 36.5%;
+	z-index: 1;
+	animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+
+@keyframes side{
+	to{
+		left: -100%;
+	}	
+}
