@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+#clock{
+	background-image: url(clock.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 500px;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+}
+
+#clock img{
+	position: absolute;
+}
+
+#clock #sec{
+	width: 25%;
+}
+
+#clock #min{
+	width: 25%;
+	transform: rotate(0deg);
+}
