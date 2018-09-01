@@ -1,10 +1,10 @@
 {
 
 	"greet": [
-		"(User say) Hello", 
-		"(User say) How are you?",
-		"(User say) Hi, I am user :D.",
-		"(User say) Whats up?",
-		"(User say) How you can help me?"
+		"(User) Hello", 
+		"(User) How are you?",
+		"(User) Hi, I am user :D.",
+		"(User) Whats up?",
+		"(User) How you can help me?"
 	]
 }  

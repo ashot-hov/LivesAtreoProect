@@ -10,8 +10,13 @@ function Bot(options){
 
 		// Bot answered
 		this.start = (form, to) =>{
-			let foo = botConfig.greet.length;
-			console.log(botConfig.greet[Math.floor((Math.random() * foo))]);
+			setTimeout(()=>{
+				console.log("...");
+				setTimeout(()=>{
+					let foo = botConfig.greet.length;
+					console.log(botConfig.greet[Math.floor((Math.random() * foo))]);
+				}, 700)
+			}, 1000)
 		}		
 	}
 
