@@ -1,0 +1,10 @@
+{
+
+	"greet": [
+		"(Bot say) Hello", 
+		"(Bot say) How are you?",
+		"(Bot say) Hi, I am user :D",
+		"(Bot say) Whats up?",
+		"(Bot say) How can I help?"
+	]
+}  
