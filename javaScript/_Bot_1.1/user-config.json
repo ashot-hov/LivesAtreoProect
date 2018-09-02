@@ -6,5 +6,11 @@
 		"(User) Hi, I am user :D.",
 		"(User) Whats up?",
 		"(User) How you can help me?"
+	],
+
+	"ask": [
+		"(User) What is your name?",
+		"(User) Where have you been ?",
+		"(User) How old are you ?"
 	]
 }  
