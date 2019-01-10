@@ -8,7 +8,7 @@ btn.addEventListener("click", addTask);
 // taskData.addEventListener("input", dataInput);
 
 function addTask(){
-	if(input.value != ""){
+	if(data.value != ""){
 		let newTask = document.createElement("div");
 		newTask.className = "newTask";
 		taskWrap.appendChild(newTask);
@@ -21,8 +21,19 @@ function addTask(){
 		input.value = "";
 		taskData.value = "";
 		searchItems();
+	} else {
+  	let newTask = document.createElement("div");
+		newTask.className = "newTask";
+		taskWrap.appendChild(newTask);
+		newTask.innerHTML = `
+		<p class="checkDone">${input.value}</p> 
+		<span class="removeTask">&#10006;</span>
+		`;
 
-	}
+		input.value = "";
+		taskData.value = "";
+		searchItems();
+  }
 
 }
 
